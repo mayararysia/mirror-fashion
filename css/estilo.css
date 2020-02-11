@@ -1,15 +1,22 @@
-.sacola{
-    background-image: url(../img/sacola.png);
+ .sacola{
+    background-image: url(../img/sacola.png) !important;
     background-repeat: no-repeat;
     background-position: top right;
 
     font-size: 14px;
     padding-right: 35px;
+    padding-top: 8px;
     text-align: right;
-    width: 140px;
+    width: 140px; 
+    
 }
 .menu-opcoes ul{
     font-size: 15px;
+}
+
+.menu-opcoes ul li{
+   display: inline;
+   margin-left: 20px;
 }
 
 .menu-opcoes a{
@@ -19,4 +26,9 @@
 body{
     color: #333333;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+} 
+
+.container{
+    margin: 0 auto;
+    width: 940px;
 }
