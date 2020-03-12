@@ -45,18 +45,6 @@ p {
     width: 550px;
 }
 
-.rodape {
-    color: #777;
-    margin: 30px 0;
-    padding: 30px 0;
-}
-
-.rodape img {
-    margin-right: 30px;
-    vertical-align: middle;
-    width: 94px;
-}
-
 #familia-pelho {
     float: right;
     margin: 0 0 10px 10px;
@@ -69,4 +57,63 @@ header {
 .container {
     margin: 0 auto;
     width: 940px;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    background-image: url(../img/fundo-rodape.png);
+    padding: 20px 0;
+}
+
+footer .container {
+    position: relative;
+}
+
+footer .container img {
+    padding-left: 4px;
+}
+
+.social {
+    position: absolute;
+    top: 12px;
+    /* top ->magic numbers*/
+    right: 4px;
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+    display: block;
+}
+
+.social a {
+    height: 32px;
+    width: 32px;
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+    background-image: url(../img/googleplus.png);
+}
+
+.rodape {
+    color: #777;
+    margin: 5px 0;
+    padding: 5px 0;
+}
+
+.rodape img {
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 90px;
 }
