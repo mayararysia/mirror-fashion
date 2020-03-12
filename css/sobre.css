@@ -117,3 +117,22 @@ footer .container img {
     vertical-align: middle;
     width: 90px;
 }
+
+
+/* SELETORES,	 PSEUDO-CLASSES	 E	 PSEUDOELEMENTOS */
+
+p::first-letter {
+    font-weight: bold;
+}
+
+h1+p {
+    text-indent: 0 !important;
+}
+
+
+/*  selecione	 as	 primeiras	 linhas	 dos	 parágrafos	 que	 não	 são	 precedidos	 por	 outros
+parágrafos */
+
+:not(p)+p::first-line {
+    font-variant: small-caps;
+}
