@@ -136,3 +136,84 @@ parágrafos */
 :not(p)+p::first-line {
     font-variant: small-caps;
 }
+
+
+/* web design responsivo */
+
+@media (max-width: 320px) {
+    .container {
+        width: 96%;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header h1 img {
+        max-width: 50%;
+    }
+    .rodape img {
+        width: 20%;
+    }
+    .rodape {
+        text-size-adjust: auto;
+    }
+    .social {
+        top: 30px;
+        right: 10px;
+    }
+    .introducao,
+    .historia,
+    .diferenciais {
+        position: static;
+        margin-right: 0;
+        width: 100%;
+        align-items: center;
+    }
+    figure img {
+        max-width: 200%;
+    }
+}
+
+@media (max-width: 939px) {
+    .container {
+        width: 96%;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header h1 img {
+        max-width: 50%;
+    }
+    .rodape img {
+        width: 20%;
+    }
+    .rodape {
+        text-size-adjust: auto;
+    }
+    .social {
+        top: 30px;
+        right: 10px;
+    }
+    .introducao,
+    .historia,
+    .diferenciais {
+        position: static;
+        margin-right: 0;
+        width: 100%;
+        align-items: center;
+    }
+    figure img {
+        max-width: 200%;
+    }
+    @media (min-width: 480px) {
+        .container {
+            width: 100%;
+        }
+        section p {
+            width: 95%;
+            height: 80%;
+        }
+        #familia-pelho img {
+            max-width: 100%;
+        }
+    }
+}
