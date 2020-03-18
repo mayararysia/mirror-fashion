@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/produto.css">
+
     <!--[if lt IE 9]>
           <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <![endif]-->
@@ -41,7 +42,7 @@
                 <p>por apenas R$ 129,90</p>
 
                 <form>
-                    <fieldset class="cores">
+                    <fieldset class="cores tamanhos">
                         <legend>Escolha a cor:</legend>
 
                         <input type="radio" name="cor" value="verde" id="verde" checked>
@@ -49,6 +50,7 @@
                             <img src="img/produtos/foto1-verde.png" alt="Produto na cor verde">
 
                             <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+                            <output	for="tamanho" name="valortamanho">42</output>
                         </label>
 
                         <input type="radio" name="cor" value="rosa" id="rosa">
@@ -113,8 +115,7 @@
             </ul>
         </div>
     </footer>
-
-
+    <link rel="text/javascript" href="js/produto.js">
 </body>
 
 </html>
