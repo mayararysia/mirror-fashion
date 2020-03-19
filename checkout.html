@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/open-iconic-bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/checkout.css">
-
 </head>
 
 <body>
@@ -110,7 +109,7 @@
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" or="cpf">CPF</label>
                                 </div>
-                                <input type="text" class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                                <input type="text" class="form-control" id="cpf" name="cpf" data-mask="999.999.999-99" placeholder="000.000.000-00" required>
                             </div>
                         </div>
                         <div class="form-group	custom-control	custom-checkbox">
@@ -128,7 +127,7 @@
                                 <div class="input-group-prepend">
                                     <label class="input-group-text" for="numero-cartao">Número	-	CVV</label>
                                 </div>
-                                <input type="text" class="form-control" id="numero-cartao" name="numero-cartao">
+                                <input type="text" class="form-control" id="numero-cartao" name="numero-cartao" data-mask="9999 9999 9999 9999 - 999">
                             </div>
                         </div>
                         <div class="form-group">
@@ -140,7 +139,7 @@
                             <option	disabled selected>Selecione	uma	opção...</option>
                             <option	value="master">MasterCard</option>
                             <option	value="visa">VISA</option>
-                            <option	value="amex">American	Express</option>
+                            <option	value="amex">American Express</option>
                         </select>
                             </div>
                         </div>
@@ -163,7 +162,10 @@
         <!-- fim . row -->
     </div>
     <!-- fim . container -->
-
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.inputmask.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script> -->
     <script type="text/javascript" src="js/total.js"></script>
 </body>
 
