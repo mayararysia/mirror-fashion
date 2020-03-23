@@ -137,6 +137,10 @@ parágrafos */
     font-variant: small-caps;
 }
 
+iframe {
+    margin-left: 250px;
+}
+
 
 /* web design responsivo */
 
