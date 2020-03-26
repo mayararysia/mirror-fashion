@@ -13,8 +13,12 @@
     <div class="container">
         <div class="produto">
             <h1>Fuzzy Cardigan</h1>
-            <p>por apenas R$ 129,90</p>
-            <form>
+            <p>por apenas R$ 100,00</p>
+            <form action="checkout.php" method="POST">
+                
+                <input type="hidden" name="nome" value="Fuzzy Cardigan">
+                <input type="hidden" name="preco" value="100,00">
+                
                 <fieldset class="cores tamanhos">
                     <legend>Escolha o tamanho:</legend>
                     

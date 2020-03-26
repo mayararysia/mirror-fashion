@@ -52,19 +52,19 @@
                         <img class="img-thumbnail mb-3 d-none d-sm-block" src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail	mb-3">
                         <dl>
                             <dt>Produto</dt>
-                            <dd>Fuzzy Cardigan</dd>
+                            <dd><?= $_POST['nome'] ?></dd>
                             <dt>Cor</dt>
-                            <dd>Verde</dd>
+                            <dd><?= $_POST['cor'] ?></dd>
                             <dt>Tamanho</dt>
-                            <dd>40</dd>
+                            <dd><?= $_POST['tamanho'] ?></dd>
                             <dt>Preço</dt>
-                            <dd id="preco">R$ 129,90</dd>
+                            <dd id="preco"><?= $_POST['preco'] ?></dd>
                         </dl>
                     </div>
                     <!--	fim	.card-body	-->
                 </div>
                 <!--	fim	.card	-->
-                <!-- <div class="card mb-3 quantidade-e-total">
+                <div class="card mb-3 quantidade-e-total">
                     <div class="card-body">
                         <div class="form-group">
                             <label for="qtd">Quantidade:</label>
@@ -73,14 +73,14 @@
                             <div class="form-group">
                             <label for="total">Total:</label>
                             <output for="qtd preco" id="total" class="form-control">
-                                 R$	129,90
+                                 R$	<?= $_POST['preco'] ?>
                             </output>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
             <form class="col-md-8 col-xl-9">
-                <div class="row">
+                <!-- <div class="row">
                     <fieldset class="col-lg-4">
                         <div class="card mb-3 quantidade-e-total">
                             <div class="card-body">
@@ -90,13 +90,13 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="total">Total:</label>
-                                    <output for="qtd preco" id="total" class="form-control"> R$	129,90</output>
+                                    <output for="qtd preco" id="total" class="form-control"> R$></output>
                                 </div>
                             </div>
                         </div>
                     </fieldset>
-                </div>
-                <br/>
+                </div> -->
+                <!-- <br/> -->
                 <div class="row">
                     <fieldset class="col-lg-6">
                         <legend>Dados pessoais</legend>
