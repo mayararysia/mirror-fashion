@@ -20,7 +20,7 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
                 <li class="nav-item	active">
-                    <a class="nav-link" href="sobre.html">Sobre</a>
+                    <a class="nav-link" href="sobre.php">Sobre</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Ajuda</a>
@@ -45,20 +45,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-xl-3">
+                <?php
+                    include("connection.php");
+
+                    $id = $_POST['id'];
+                    $tamanho = $_POST['tamanho'];
+                    $cor = $_POST['cor'];
+
+                    $dados = mysqli_query($conexao,	"SELECT	* FROM	produtos WHERE	id = $id");
+                    $produto = mysqli_fetch_array($dados);
+                ?>
+
                 <div class="card mb-3">
+
                     <div class="card-header">Sua compra</div>
                     <!--	fim	.card-header	-->
                     <div class="card-body">
-                        <img class="img-thumbnail mb-3 d-none d-sm-block" src="img/produtos/foto1-verde.png" alt="Fuzzy Cardigan" class="img-thumbnail	mb-3">
+                        <img class="img-thumbnail mb-3 d-none d-sm-block" src="img/produtos/foto<?= $produto['id'] ?>-verde.png" alt="<?= $produto['nome'] ?>" class="img-thumbnail	mb-3">
                         <dl>
                             <dt>Produto</dt>
-                            <dd><?= $_POST['nome'] ?></dd>
+                            <dd><?= $produto['nome'] ?></dd>
                             <dt>Cor</dt>
-                            <dd><?= $_POST['cor'] ?></dd>
+                            <dd><?= $cor?></dd>
                             <dt>Tamanho</dt>
-                            <dd><?= $_POST['tamanho'] ?></dd>
+                            <dd><?= $tamanho?></dd>
                             <dt>Preço</dt>
-                            <dd id="preco"><?= $_POST['preco'] ?></dd>
+                            <dd id="preco"><?= $produto['preco'] ?></dd>
                         </dl>
                     </div>
                     <!--	fim	.card-body	-->
@@ -72,31 +84,12 @@
                         </div>
                             <div class="form-group">
                             <label for="total">Total:</label>
-                            <output for="qtd preco" id="total" class="form-control">
-                                 R$	<?= $_POST['preco'] ?>
-                            </output>
+                            <output for="qtd preco" id="total" class="form-control"> R$	<?= $produto['preco'] ?></output>
                         </div>
                     </div>
                 </div>
             </div>
             <form class="col-md-8 col-xl-9">
-                <!-- <div class="row">
-                    <fieldset class="col-lg-4">
-                        <div class="card mb-3 quantidade-e-total">
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for="qtd">Quantidade:</label>
-                                    <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for="total">Total:</label>
-                                    <output for="qtd preco" id="total" class="form-control"> R$></output>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </div> -->
-                <!-- <br/> -->
                 <div class="row">
                     <fieldset class="col-lg-6">
                         <legend>Dados pessoais</legend>

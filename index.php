@@ -49,61 +49,21 @@
     <section class="painel novidades painel-aberto">
         <h2>Novidades</h2>
         <ol>
-            <!-- primeiro produto -->
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura1.png" alt="miniatura1">
-                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
-                    </figure>
-                </a>
-            </li>
-            <!-- fim do primeiro produto -->
+            <?php
+                include("connection.php");
+                $dados = mysqli_query($conexao,	"SELECT	* FROM	produtos ORDER BY data DESC LIMIT 0, 9");
+                while($produto = mysqli_fetch_array($dados)):
+            ?>
 
             <li>
-                <a href="produto.html">
+                <a href="produto.php?id=<?= $produto['id'] ?>">
                     <figure>
-                        <img src="img/produtos/miniatura2.png">
-                        <figcaption>Segunda blusa por R$ 120,90</figcaption>
+                        <img src="img/produtos/miniatura<?= $produto['id'] ?>.png" alt="miniatura<?= $produto['id' ]?>">
+                        <figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
                     </figure>
                 </a>
             </li>
-
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura3.png">
-                        <figcaption>Terceira blusa por R$ 118,90</figcaption>
-                    </figure>
-                </a>
-            </li>
-
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura4.png">
-                        <figcaption>Quarta blusa por R$ 110,90</figcaption>
-                    </figure>
-                </a>
-            </li>
-
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura5.png">
-                        <figcaption>Quinta blusa por R$ 50,00</figcaption>
-                    </figure>
-                </a>
-            </li>
-
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura6.png">
-                        <figcaption>Blusa rosa por R$ 20,90</figcaption>
-                    </figure>
-                </a>
-            </li>
+            <?php endwhile; ?>
         </ol>
         <button type="button">Mostrar mais</button>
     </section>
@@ -111,59 +71,25 @@
     <section class="painel mais-vendidos painel-aberto">
         <h2>Mais Vendidos</h2>
         <ol>
+            <?php
+                $conexao = mysqli_connect("127.0.0.1",	"root",	"", "DB_MIRROR_FASHION", "3306");
+                    
+                if ($conexao -> connect_errno) {
+                    echo "Failed to connect to MySQL: " . $conexao -> connect_error;
+                    exit();
+                }
+                $dados = mysqli_query($conexao,	"SELECT	* FROM	produtos ORDER BY vendas ASC LIMIT 0, 9");
+                while($produto = mysqli_fetch_array($dados)):
+            ?>
             <li>
-                <a href="produto.html">
+                <a href="produto.php?id=<?= $produto['id'] ?>">
                     <figure>
-                        <img src="img/produtos/miniatura1.png" alt="miniatura1">
-                        <figcaption>Fuzz Cardigan por R$ 129,90</figcaption>
+                        <img src="img/produtos/miniatura<?= $produto['id'] ?>.png" alt="miniatura<?= $produto['id'] ?>">
+                        <figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
                     </figure>
                 </a>
             </li>
-            <!-- fim do primeiro produto -->
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura15.png">
-                        <figcaption>Vestido por R$ 120,90</figcaption>
-                    </figure>
-                </a>
-            </li>
-
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura13.png">
-                        <figcaption>Blusa por R$ 118,90</figcaption>
-                    </figure>
-                </a>
-            </li>
-
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura14.png">
-                        <figcaption>Blusa por R$ 110,90</figcaption>
-                    </figure>
-                </a>
-            </li>
-
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura7.png">
-                        <figcaption>Blusa por R$ 50,00</figcaption>
-                    </figure>
-                </a>
-            </li>
-
-            <li>
-                <a href="produto.html">
-                    <figure>
-                        <img src="img/produtos/miniatura11.png">
-                        <figcaption>Short por R$ 20,90</figcaption>
-                    </figure>
-                </a>
-            </li>
+            <?php endwhile; ?>
         </ol>
         <button type="button">Mostrar mais</button>
     </section>
