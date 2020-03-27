@@ -3,6 +3,14 @@
 
 **Training with [HTML](https://www.w3.org/TR/html52/), [CSS](https://www.w3.org/Style/CSS/), [jQuery](https://jquery.com/), [PHP](https://www.php.net/manual/pt_BR/intro-whatis.php) and the [LESS](http://lesscss.org/) preprocessor**.
 
+## Screens
+
+- Index
+![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/index.PNG)
+
+- Sobre
+![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/sobre.png)
+
 
 ## About this Project
 
@@ -14,9 +22,7 @@ This project is part of my studies portfolio, so, feel free to contribute with i
 
 Email-me: mayara.ryzia@gmail.com | mral1@ifal.edu.br
 
-Connect with me at [Medium](https://medium.com/@mayararysia).
-
-Connect with me at [LinkedIn](https://www.linkedin.com/in/rysia/).
+Connect with me at [Medium](https://medium.com/@mayararysia) and [LinkedIn](https://www.linkedin.com/in/rysia/).
 
 It's free!
 
@@ -28,8 +34,5 @@ It's free!
 * Start  Apache and MySQL
 * Run the sql script (which is inside the 'database' folder) in phpmyadmin to create the database and insert the products.
 * In the browser access **http://localhost/projects/mirror-fashion**
-* To access the product page you need to enter the id: **http://localhost/projetos/mirror-fashion/produto.php?id=2'**
-****
-
-<!--## [Click here to view](https://mayararysia.github.io/mirror-fashion/) -->
+* To access the product page you need to enter the id: **http://localhost/projetos/mirror-fashion/produto.php?id=2**
 

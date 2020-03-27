@@ -2,18 +2,23 @@
     $mostrarReset = true;
     $cabecalho_title = "Mirror Fashion";
     $cabecalho_css =
-    '<link rel="stylesheet" href="css/estilos.css">
+    '<link rel="stylesheet" href="css/bootstrap-reduzido.css">
+    <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/rodape.css">';
   
     include("corpo.php");
 ?>
 
 <div class="container destaque">
-    <section class="busca">
+    <section class="busca .input-group ">
         <h2>Busca</h2> 
         <form>
-            <input type="search">
-            <button>Buscar</button>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Pesquisar" aria-describedby="Pesquisar">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button" title="Buscar">Buscar</button>
+                 </div>
+            </div>
         </form>
     </section>
     <!-- fim .busca -->

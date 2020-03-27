@@ -27,16 +27,18 @@
     <header class="container">
         <h1><a href="index.php"><img src="img/logo.png" alt="Mirror Fashion"></a></h1>
         <p class="sacola"> Nenhum item na sacola de compras</p>
-        <nav class="menu-opcoes">
+        <nav class="menu-opcoes navbar">
             <ul>
+                <li><a href="https://github.com/mayararysia/mirror-fashion"><i class="fab fa-github-alt"></i></a></li>
                 <li><a href="#">Sua Conta</a></li>
                 <li><a href="#">Lista de Desejos</a></li>
-                <li><a href="#">Cartao Fidelidade</a></li>
+                <li><a href="#">Cartão Fidelidade</a></li>
                 <li><a href="sobre.php">Sobre</a></li>
                 <li><a href="#">Ajuda</a></li>
             </ul>
         </nav>
     </header>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="font-awesome/js/all.min.js"></script>
 </body>
 </html>

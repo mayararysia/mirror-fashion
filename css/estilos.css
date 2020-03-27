@@ -5,6 +5,7 @@ body {
 
 .busca,
 .menu-departamentos {
+    display: inline-block;
     background-color: #DCDCDC;
     font-weight: bold;
     text-transform: uppercase;
@@ -243,6 +244,9 @@ body {
         text-align: center;
         display: inline-block;
         margin: 5px;
+        color: #333333;
+        font-family: "PT Sans", sans-serif;
+        font-weight: bold;
     }
     .busca,
     .menu-departamentos,

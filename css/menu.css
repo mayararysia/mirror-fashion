@@ -1,3 +1,18 @@
+/*navbar do bootstrap*/
+
+.navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+}
+
 .sacola {
     background-image: url(../img/sacola.png) !important;
     background-repeat: no-repeat;
@@ -26,19 +41,25 @@ header {
 }
 
 .menu-opcoes a {
-    color: #003366;
+    color: #333333;
+    padding: 9px 9px;
+    text-decoration: none;
 }
 
 .menu-opcoes {
     position: absolute;
     bottom: 0;
     right: 0;
+    color: #333333;
+    font-family: "PT Sans", sans-serif;
+    font-weight: bold;
 }
 
 .menu-opcoes a:hover {
-    color: #007DC6;
+    background-color: #B39B74;
+    color: #333333;
 }
 
 .menu-opcoes a:active {
-    color: #867DC6;
+    color: #333333;
 }
