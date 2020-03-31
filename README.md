@@ -6,10 +6,10 @@
 ## Screens
 
 - Index
-![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/index.png)
+![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/home.png)
 
 - Sobre
-![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/home.png)
+![Sobre](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/sobre.png)
 
 - Produto Camisa Casual
 ![Produto Camisa Casual](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/camisa-casual.png)
