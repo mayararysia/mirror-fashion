@@ -5,15 +5,10 @@
 
 ## Screens
 
-- Index
-
 ![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/home.png)
-
-- Sobre
 
 ![Sobre](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/sobre.png)
 
-- Produto Camisa Casual
 ![Produto Camisa Casual](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/camisa-casual.png)
 
 ## About this Project
