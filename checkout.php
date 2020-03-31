@@ -76,21 +76,24 @@
                     <!--	fim	.card-body	-->
                 </div>
                 <!--	fim	.card	-->
-                <div class="card mb-3 quantidade-e-total">
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label for="qtd">Quantidade:</label>
-                            <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
-                        </div>
-                            <div class="form-group">
-                            <label for="total">Total:</label>
-                            <output for="qtd preco" id="total" class="form-control"> R$	<?= $produto['preco'] ?></output>
-                        </div>
-                    </div>
-                </div>
             </div>
             <form class="col-md-8 col-xl-9">
                 <div class="row">
+                    <fieldset class="col-lg-8">
+                        <div class="card mb-3 quantidade-e-total">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label for="qtd">Quantidade:</label>
+                                    <input type="number" id="qtd" min="1" max="99" value="1" class="form-control">
+                                </div>
+                                    <div class="form-group">
+                                    <label for="total">Total:</label>
+                                    <output for="qtd preco" id="total" class="form-control"> R$	<?= $produto['preco'] ?></output>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+
                     <fieldset class="col-lg-6">
                         <legend>Dados pessoais</legend>
                         <div class="form-group">
@@ -151,6 +154,8 @@
         <!-- fim . row -->
     </div>
     <!-- fim . container -->
+
+</system.webServer>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="font-awesome/js/all.min.js"></script>

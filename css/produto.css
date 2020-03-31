@@ -97,6 +97,7 @@ label[for=azul]::after {
     display: block;
     padding: 0.5em 1em;
     margin: 1em 0;
+    cursor: pointer;
 }
 
 .detalhes {

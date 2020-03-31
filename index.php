@@ -32,7 +32,7 @@
                         <li><a href="#">Manga curta</a></li>
                         <li><a href="#">Manga comprida</a></li>
                         <li><a href="#">Camisa social</a></li>
-                        <li><a href="#">Camisa casual</a></li>
+                        <li><a href="camisa-casual.php">Camisa casual</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Calças</a></li>

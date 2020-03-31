@@ -6,11 +6,13 @@
 ## Screens
 
 - Index
-![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/index.PNG)
+![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/index.png)
 
 - Sobre
 ![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/sobre.png)
 
+- Produto Camisa Casual
+![Produto Camisa Casual](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/camisa-casual.png)
 
 ## About this Project
 
@@ -34,5 +36,5 @@ It's free!
 * Start  Apache and MySQL
 * Run the sql script (which is inside the 'database' folder) in phpmyadmin to create the database and insert the products.
 * In the browser access **http://localhost/projects/mirror-fashion**
-* To access the product page you need to enter the id: **http://localhost/projetos/mirror-fashion/produto.php?id=2**
-
+* To access the product page you need to enter the id e.g.: **http://localhost/projects/mirror-fashion/produto.php?id=2**
+* To view a product model, access **Blusas e Camisas** and click on **Camisa Casual**.
