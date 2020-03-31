@@ -3,7 +3,7 @@
     $mostrarReset = false;
     $cabecalho_title = "Sobre a Mirror Fashion"; 
     $cabecalho_css = 
-        '<link rel="stylesheet" href="css/sobre.css">';
+        '<link rel="stylesheet" href="css/sobre.min.css">';
 
     include("corpo.php");
 ?>
@@ -68,5 +68,4 @@
  
 <?php include("rodape.php");?>
 
-<script type="text/javascript" src="js/desabilitaRodapeGenerico.js"></script>
-<script type="text/javascript" src="js/less.min.js"></script>
+<script type="text/javascript" src="js/desabilitaRodapeGenerico.min.js"></script>

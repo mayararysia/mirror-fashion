@@ -2,9 +2,9 @@
     $mostrarReset = true;
     $cabecalho_title = "Camisa Casual";
     $cabecalho_css =
-    '<link rel="stylesheet" href="css/bootstrap-reduzido.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/rodape.css">';
+    '<link rel="stylesheet" href="css/bootstrap-reduzido.min.css">
+    <link rel="stylesheet" href="css/estilos.min.css">
+    <link rel="stylesheet" href="css/rodape.min.css">';
   
     include("corpo.php");
 ?>

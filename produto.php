@@ -9,8 +9,8 @@
     $mostrarReset = true;
     $cabecalho_title = $produto['nome'];
     $cabecalho_css =
-    '<link rel="stylesheet" href="css/produto.css">
-     <link rel="stylesheet" href="css/rodape.css">
+    '<link rel="stylesheet" href="css/produto.min.css">
+     <link rel="stylesheet" href="css/rodape.min.css">
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton&display=swap">';
    
     include("corpo.php");
@@ -76,5 +76,5 @@
 </div>
 
 <?php include("rodape.php"); ?>
-<script type="text/javascript" src="js/produto.js"></script>
-<script type="text/javascript" src="js/desabilitaRodape.js"></script>
+<script type="text/javascript" src="js/produto.min.js"></script>
+<script type="text/javascript" src="js/desabilitaRodape.min.js"></script>

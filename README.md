@@ -9,7 +9,7 @@
 ![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/index.png)
 
 - Sobre
-![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/sobre.png)
+![Index](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/home.png)
 
 - Produto Camisa Casual
 ![Produto Camisa Casual](https://raw.githubusercontent.com/mayararysia/mirror-fashion/master/screenshots/camisa-casual.png)

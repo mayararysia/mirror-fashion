@@ -12,8 +12,8 @@
         }
     ;?>
     
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/menu.min.css">
+    <link rel="stylesheet" href="css/general.min.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script">
     <?php 
         print $mostrarReset == true ? @$css : @$cabecalho_css;

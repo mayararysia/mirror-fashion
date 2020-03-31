@@ -3,6 +3,9 @@
 @azulmagenta: #DCDCF5;
 @cinzento: #393939;
 @cinzamedio: #DCDCDC;
+@cinzaclaromedio: #999;
+@red-green-blue: #bebef4;
+@rosa-red-green-blue: #f4bebe;
 
 .transicao(@propriedades, @tempo)	{
     -webkit-transition:	@propriedades @tempo;  // For Webkit browser(Chrome, Safari...)
@@ -32,12 +35,93 @@
     .gradiente(@cor1, darken(@cor1,	10%));
 }
 
+body {
+    color: #333333;
+    font-family: "PT Sans", sans-serif;
+}
+
+.busca,
+.menu-departamentos {
+    display: inline-block;
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 10px;
+    width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
+.busca input[type=search] {
+    width: 170px;
+}
+
+.busca,
+.menu-departamentos {
+    float: left;
+}
+
+.busca button {
+    /* adicionando imagem */
+    background-image: url(../img/busca.png);
+    background-repeat: no-repeat;
+    border: none;
+    /* tamanho da imagem */
+    width: 20px;
+    height: 20px;
+    /* imagem replacement */
+    text-indent: -9999px;
+}
+
+.busca {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.menu-departamentos {
+    clear: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display: block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: #DCDCDC;
+}
+
+.menu-departamentos li li a:before {
+    content: '\272A';
+    padding-right: 3px;
+}
+
 .painel{
     margin: 10px 0;
     padding: 10px;
     width: 445px;
     border-radius: 4px;
-    box-shadow: inset 1px 1px 4px #999;
+    box-shadow: inset 1px 1px 4px @cinzaclaromedio;
 
     li{
         display: inline-block;
@@ -49,7 +133,8 @@
 
         &:hover {
             background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 0 100px @escuro;
+            // box-shadow: 0 0 100px @escuro;
+            box-shadow: 0 0 5px @escuro;
             .transicao(ease-in,  box-shadow 10s);
             transform: scale(1.2) rotate(-5deg);
 
@@ -85,8 +170,6 @@
         text-align: center;
         text-decoration: none;
     }
-
-   
 
     button{
         /*	posicionamento	*/
@@ -143,26 +226,56 @@
 
 .novidades {
     float: left;
-    .gradiente(@rosaavermelhado,  #bebef4)
+    .gradiente(@rosaavermelhado,  @red-green-blue)
 }
 
 .mais-vendidos {
     float: right;
-    .gradiente(@azulmagenta, #f4bebe);
+    .gradiente(@azulmagenta, @rosa-red-green-blue);
 }
 
-.sacola {
-    background-image: url(../img/sacola.png) !important;
-    background-repeat: no-repeat;
-    background-position: top right;
-    font-size: 14px;
-    padding-right: 35px;
-    padding-top: 8px;
-    text-align: right;
+
+.painel-produtos {
+    margin: 80px 0;
+    padding: 50px 10px 100px 10px;
+    border-radius: 4px;
+    box-shadow: inset 1px 1px 4px #999;
+    float: left;
+    background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+.painel-produtos h2 {
+    padding: 0 0 20px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Bad Script', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px rgba(255, 255, 255, 0.8);
+}
+
+.painel-produtos li {
+    display: inline-block;
+    vertical-align: top;
     width: 140px;
-    position: absolute;
-    top: 0;
-    right: 0;
+    margin: 0 1px 0 2.5px;
+    padding: 0 0 10px 0;
+    transition: 0.7 ease-out;
+}
+
+.painel-produtos li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 5px #333;
+    transition: box-shadow 0.7s ease-in;
+    transform: scale(1.2);
+}
+
+.painel-produtos a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
 }
 
 body {
@@ -206,80 +319,6 @@ header {
     width: 940px;
 }
 
-.busca,
-.menu-departamentos {
-    background-color:@cinzamedio;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 10px;
-    width: 230px;
-}
-
-.busca h2,
-.busca form,
-.menu-departamentos h2 {
-    margin: 10px;
-}
-
-.busca input[type=search] {
-    width: 170px;
-}
-
-.busca,
-.menu-departamentos {
-    float: left;
-}
-
-.busca button {
-    /* adicionando imagem */
-    background-image: url(../img/busca.png);
-    background-repeat: no-repeat;
-    border: none;
-    /* tamanho da imagem */
-    width: 20px;
-    height: 20px;
-    /* imagem replacement */
-    text-indent: -9999px;
-}
-
-.busca {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
-}
-
-.menu-departamentos li {
-    background-color: white;
-    margin-bottom: 1px;
-    padding: 5px 10px;
-}
-
-.menu-departamentos a {
-    color: @escuro;
-    text-decoration: none;
-}
-
-.menu-departamentos {
-    clear: left;
-    margin-top: 10px;
-    padding-bottom: 10px;
-}
-
-.menu-departamentos li ul {
-    display: none;
-}
-
-.menu-departamentos li:hover ul {
-    display: block;
-}
-
-.menu-departamentos ul ul li {
-    background-color:@cinzamedio;
-}
-
-.menu-departamentos li li a:before {
-    content: '\272A';
-    padding-right: 3px;
-}
 
 .destaque {
     margin-top: 10px;
@@ -308,51 +347,9 @@ header {
 }
 
 
-footer {
-    clear: both;
-    position: relative;
-    background-image: url(../img/fundo-rodape.png);
-    padding: 20px 0;
-}
-
-footer .container {
-    position: relative;
-}
-
-.social {
-    position: absolute;
-    /* top: 12px;  magic numbers**/
-    display: inline;
-    right: 0;
-    padding: 10px 0;
-}
-
-.social li {
-    float: left;
-    margin-left: 25px;
-}
-
-.social a {
-    height: 32px;
-    width: 32px;
-    display: block;
-    text-indent: -9999px;
-}
-
-.social a[href*="facebook.com"] {
-    background-image: url(../img/facebook.png);
-}
-
-.social a[href*="twitter.com"] {
-    background-image: url(../img/twitter.png);
-}
-
-.social a[href*="plus.google.com"] {
-    background-image: url(../img/googleplus.png);
-}
-
 
 /* web design responsivo */
+
 
 @media (max-width: 320px) {
     .container {
@@ -372,6 +369,9 @@ footer .container {
         text-align: center;
         display: inline-block;
         margin: 5px;
+        color: #333333;
+        font-family: "PT Sans", sans-serif;
+        font-weight: bold;
     }
     .busca,
     .menu-departamentos,
@@ -389,7 +389,6 @@ footer .container {
         width: 100%;
     }
 }
-
 
 @media (max-width: 939px) {
     .container {
@@ -425,7 +424,6 @@ footer .container {
     .painel img {
         width: 100%;
     }
-
     @media (min-width: 480px) {
         header h1 {
             margin: 5px 0;
@@ -438,7 +436,7 @@ footer .container {
             column-count: 2;
         }
     }
-    @media (min-width: 720px) {
+    @media(min-width: 720px) {
         header h1 {
             text-align: left;
         }

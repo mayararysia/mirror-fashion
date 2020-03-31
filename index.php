@@ -2,9 +2,9 @@
     $mostrarReset = true;
     $cabecalho_title = "Mirror Fashion";
     $cabecalho_css =
-    '<link rel="stylesheet" href="css/bootstrap-reduzido.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/rodape.css">';
+    '<link rel="stylesheet" href="css/bootstrap-reduzido.min.css">
+    <link rel="stylesheet" href="css/estilos.min.css">
+    <link rel="stylesheet" href="css/rodape.min.css">';
   
     include("corpo.php");
 ?>
@@ -104,7 +104,7 @@
     include("rodape.php"); 
 ?>
 
-<script type="text/javascript" src="js/less.min.js"></script>
+
 <script type="text/javascript" src="js/banner.min.js"></script>';   
 <script type="text/javascript" src="js/home.min.js"></script>
-<script type="text/javascript" src="js/desabilitaRodape.js"></script>';
+<script type="text/javascript" src="js/desabilitaRodape.min.js"></script>';
