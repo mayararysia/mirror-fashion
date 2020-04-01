@@ -77,12 +77,8 @@
         <h2>Mais Vendidos</h2>
         <ol>
             <?php
-                $conexao = mysqli_connect("127.0.0.1",	"root",	"", "DB_MIRROR_FASHION", "3306");
+                include("connection.php");
                     
-                if ($conexao -> connect_errno) {
-                    echo "Failed to connect to MySQL: " . $conexao -> connect_error;
-                    exit();
-                }
                 $dados = mysqli_query($conexao,	"SELECT	* FROM	produtos ORDER BY vendas ASC LIMIT 0, 9");
                 while($produto = mysqli_fetch_array($dados)):
             ?>
